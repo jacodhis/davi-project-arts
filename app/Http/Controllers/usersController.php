@@ -73,7 +73,7 @@ class usersController extends Controller
     public function destroy($id){
         $user = User::findorFail($id);
         $user->delete();
-        return redirect()->back();
+        return redirect()->back()->with('success','user done successfully');
 
     }
 }
