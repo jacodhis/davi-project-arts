@@ -97,6 +97,12 @@ class artsController extends Controller
         // return $art;
        
     }
+    public function destroy($id){
+        $art = at::findorFail($id);
+        $art->delete();
+        return back()->with('success','art deletd successfully');
+
+    }
 
 
 

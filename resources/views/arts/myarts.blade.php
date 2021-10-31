@@ -18,7 +18,7 @@
               <div class="card-header">
                 
                   <div class="d-flex justify-content-between align-items-baseline">
-                   <h4 class="card-title">My art art</H4>
+                   <h4 class="card-title">My art </H4>
                    <div>
                     <a href="/createArt">Add art</a>|
                      <a href="{{route('all-Arts')}}">others arts</a>
@@ -33,8 +33,9 @@
                   @foreach($arts as $art)
                     <div class="col-md-3 col-lg-3 col-sm-12">
                      <a href="/viewsingleart/{{$art->id}}"> <img src="{{asset('/storage/art/'.$art->image)}}"
-                    alt="Image" width="50px" height="50px"></a>
+                    alt="Image" width="70px" height="70px"></a>
                    <p>  {{$art->name}}</p>
+                   <p><a href="/arts/{{$art->id}}/delete"> delete</a></p>
                       </div>
                     @endforeach
                 </div>

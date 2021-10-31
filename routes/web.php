@@ -33,6 +33,7 @@ Route::get('/artists',[usersController::class, 'artists'])->name('artists');
 Route::get('/all-Arts',[artsController::class, 'index'])->name('all-Arts');
 //my arts
 Route::get('/arts/{user_id}',[artsController::class, 'arts'])->name('arts');
+Route::get('/arts/{artId}/delete',[artsController::class, 'destroy']);
 //artist can create an art
 Route::get('createArt',[artsController::class, 'create'])->name('createArt');
 //artist can upload art route
