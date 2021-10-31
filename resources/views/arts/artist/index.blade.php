@@ -34,7 +34,7 @@ admin Dashboard
                     <tbody>
                         @foreach($artists as $artist)
                         <tr>
-                        <td >{{$artist->name}}</td>
+                        <td ><a href="/artists/{{$artist->id}}">{{$artist->name}}</a></td>
                         <td>{{$artist->email}}</td>
                         <td>{{$artist->phone}}</td>
                         </tr>

@@ -296,18 +296,9 @@
                 <nav>
                     <ul>
                         <li>
-                           <a href="">#</a>
+                           <a href="/home">Home Page</a>
                         </li>
-                        <li>
-                            <a href="#">
-                                #
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                #
-                            </a>
-                        </li>
+                      
                     </ul>
                 </nav>
                 

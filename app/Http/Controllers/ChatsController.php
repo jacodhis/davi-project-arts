@@ -21,6 +21,7 @@ class ChatsController extends Controller
            $comment->body = $request->input('body');
            $comment->user_id = auth()->user()->id;
            $art->comments()->save($comment);
+        //    dd($comment);
    
            return back()->with('success','chat sent successfully');
 

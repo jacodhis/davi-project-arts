@@ -28,6 +28,8 @@ Route::PUT('/update-user-profile',[usersController::class, 'updateprofile'])->na
 Route::get('/users',[usersController::class, 'users'])->name('users');
 //admin view artists
 Route::get('/artists',[usersController::class, 'artists'])->name('artists');
+// admin to view artist information route
+Route::get('/artists/{artistId}',[usersController::class, 'artist_info'])->name('artists-info');
 
 //all arts except for the artist logged in
 Route::get('/all-Arts',[artsController::class, 'index'])->name('all-Arts');

@@ -48,6 +48,15 @@ class usersController extends Controller
    
         
     }
+    public function artist_info($id){
+     $artist = User::findorFail($id);
+     if($artist){ 
+       return view('arts.admin.artistinfo',compact('artist'));
+     }else{
+        return back();
+     }
+    
+    }
 
     public function updateprofile(Request $request){
         $user_id = auth()->user()->id;

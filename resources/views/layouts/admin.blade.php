@@ -78,33 +78,8 @@
               
                
                
-                <li class="dropdown">
-                <a  class="dropdown-toggle"
-                          data-toggle="dropdown"> <i class="now-ui-icons design_bullet-list-67"></i>Options </a>
-                        <ul class="dropdown-menu">
-                        <a href="#"> <li class="dropdown-item"> view all users </li></a>
-                        <a href="#"><li class="dropdown-item">view all artists</li></a>
-
-                        </ul>
-                    </li>
-               <!-- <li class="active ">
-                    <a href="./tables.html">
-                        <i class="now-ui-icons design_bullet-list-67"></i>
-                        <p>Page Content</p>
-                    </a>
-                </li> -->
-                <!--  <li>
-                    <a href="./typography.html">
-                        <i class="now-ui-icons text_caps-small"></i>
-                        <p>Typography</p>
-                    </a>
-                </li>
-                <li class="active-pro">
-                    <a href="./upgrade.html">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li> -->
+             
+           
             </ul>
         </div>
     </div>
