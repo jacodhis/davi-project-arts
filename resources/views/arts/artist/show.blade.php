@@ -37,7 +37,7 @@ artist |Dashboard
                <div class="col-lg-5 pl-8 pb-8">
                <h3 class="title">{{$art->name}}</h3>
                             <p><span>Offered by: <a href="#">{{$art->user->name}}</a></span><br>
-                                <!-- <span> Ad ID:<a href="#" class="time"> {{$art->id}}</a></span></p> -->
+                                
                                 <span> Ad Price : Kshs<a href="#" class="time"> {{$art->price}} </a> </span></p>
                             <span class="icon">Posted : {{$art->created_at->diffForHumans()}}</span><br><br>
                             <span class="icon"><a href="/arts/{{$art->id}}/edit">Edit Art</a></span>
@@ -64,7 +64,7 @@ artist |Dashboard
                           <input type="text" name="body" placeholder="enter comment" class="form-control">
                         </div>
                         <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Reply</button>
+                        <button type="submit" class="btn btn-primary">chat</button>
                       </div>
                       </form>
 

@@ -35,7 +35,7 @@
                   @foreach($arts as $art)
                     <div class="col-md-3 col-lg-3 col-sm-12">
                      <a href="/viewsingleart/{{$art->id}}"> <img src="{{asset('/storage/art/'.$art->image)}}"
-                    alt="Image" width="50px" height="50px"></a>
+                    alt="Image" width="70px" height="70px"></a>
                    <p>  {{$art->name}}</p>
                       </div>
                     @endforeach
