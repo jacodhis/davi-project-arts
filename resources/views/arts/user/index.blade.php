@@ -29,6 +29,8 @@ admin Dashboard
                     <th scope="col">name</th>
                     <th scope="col">email</th>
                     <th scope="col">phone</th>
+                    <th scope="col">delete</th>
+                    
                     </tr>
                 </thead>
                     <tbody>
@@ -38,6 +40,7 @@ admin Dashboard
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->phone}}</td>
+                        <td><a href="/artist/{{$user->id}}/delete">X</a></td>
                         </tr>
                         @endforeach
                     </tbody>
