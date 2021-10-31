@@ -19,7 +19,7 @@ use App\Http\controllers\ChatsController;
 Route::get('/', function () {
     return view('welcome');
 });
-//view profile forany user
+//view profile for any user
 Route::get('/profile/{user_id}',[usersController::class, 'profile'])->name('profile');
 //update any users profile 
 Route::PUT('/update-user-profile',[usersController::class, 'updateprofile'])->name('update-user');
@@ -33,11 +33,16 @@ Route::get('/artists',[usersController::class, 'artists'])->name('artists');
 Route::get('/all-Arts',[artsController::class, 'index'])->name('all-Arts');
 //my arts
 Route::get('/arts/{user_id}',[artsController::class, 'arts'])->name('arts');
+//artist can delete art route
 Route::get('/arts/{artId}/delete',[artsController::class, 'destroy']);
+//artist can edit art route
+Route::get('/arts/{artId}/edit',[artsController::class, 'edit']);
 //artist can create an art
 Route::get('createArt',[artsController::class, 'create'])->name('createArt');
 //artist can upload art route
 Route::post('/uploadart',[artsController::class, 'store'])->name('artupload');
+//artist can update art route
+Route::put('/update-art/{artId}',[artsController::class, 'update']);
 
 //show single art
 Route::get('/viewsingleart/{id}',[artsController::class, 'show'])->name('showArt');

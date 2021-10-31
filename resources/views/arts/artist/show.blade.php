@@ -39,8 +39,8 @@ artist |Dashboard
                             <p><span>Offered by: <a href="#">{{$art->user->name}}</a></span><br>
                                 <!-- <span> Ad ID:<a href="#" class="time"> {{$art->id}}</a></span></p> -->
                                 <span> Ad Price : Kshs<a href="#" class="time"> {{$art->price}} </a> </span></p>
-                            <span class="icon"><i class="fa fa-clock-o"></i><a href="#">{{$art->created_at->diffForHumans()}}</a></span>
-                            <!-- <span class="icon"><i class="fa fa-map-marker"></i><a href="#">estate name,county name</a></span> -->
+                            <span class="icon">Posted : {{$art->created_at->diffForHumans()}}</span><br><br>
+                            <span class="icon"><a href="/arts/{{$art->id}}/edit">Edit Art</a></span>
                
               </div>
                </div>

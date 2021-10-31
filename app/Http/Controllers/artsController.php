@@ -94,8 +94,21 @@ class artsController extends Controller
            elseif(auth()->user()->usertype == 'admin'){
             return view('arts.admin.show',['art'=>$art]);
            }
-        // return $art;
-       
+    
+    }
+    public function edit($id){
+        $art = at::findorFail($id);
+        // dd($art);
+        return view('arts.artist.editart',compact('art'));
+    }
+    public function update(Request $request,$id){
+        // $auth_id = auth()->user()->id;
+        $art = at::findorFail($id);
+        $art->name = $request->name;
+        $art->price = $request->price;
+        $art->description = $request->description;
+        $art->save();
+        return redirect()->route('showArt',[$id])->with('success','arts updated successfully');
     }
     public function destroy($id){
         $art = at::findorFail($id);
