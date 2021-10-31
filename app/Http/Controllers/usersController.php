@@ -69,8 +69,11 @@ class usersController extends Controller
         $user->save();
 
         return back()->with('success','update done successfully');
-    
-  
-        
+    }
+    public function destroy($id){
+        $user = User::findorFail($id);
+        $user->delete();
+        return redirect()->back();
+
     }
 }

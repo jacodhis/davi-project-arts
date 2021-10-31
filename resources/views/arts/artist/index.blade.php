@@ -29,6 +29,7 @@ admin Dashboard
                     <th>name</th>
                     <th >email</th>
                     <th >phone</th>
+                    <th>delete</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -37,6 +38,7 @@ admin Dashboard
                         <td ><a href="/artists/{{$artist->id}}">{{$artist->name}}</a></td>
                         <td>{{$artist->email}}</td>
                         <td>{{$artist->phone}}</td>
+                        <td><a href="/artist/{{$artist->id}}/delete">X</a></td>
                         </tr>
                         @endforeach
                     </tbody>

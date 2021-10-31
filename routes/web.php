@@ -26,6 +26,7 @@ Route::PUT('/update-user-profile',[usersController::class, 'updateprofile'])->na
 
 //admin view users
 Route::get('/users',[usersController::class, 'users'])->name('users');
+Route::get('/artist/{artistId}/delete',[usersController::class, 'destroy']);
 //admin view artists
 Route::get('/artists',[usersController::class, 'artists'])->name('artists');
 // admin to view artist information route
